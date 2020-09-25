@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static "css/home.css"%}">
+	<title>Know your day</title>
+</head>
+<body>
+<div class="rr">
+	<form action="{% url 'which_day' %}">
+		DD<input type="text" name="day"> MM<input type="text" name="month"> YY<input type="text" name="year">
+		<input type="submit" name="submit" class="button">
+		
+	</form>
+</div>
+</body>
+</html>
